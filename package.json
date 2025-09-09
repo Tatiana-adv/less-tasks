@@ -1,0 +1,17 @@
+{
+  "name": "exercicio-less",
+  "version": "1.0.0",
+  "description": "Exercicio de conversão para LESS",
+  "main": "index.js",
+  "scripts": {
+    "less": "lessc styles/style.less styles/style.css",
+    "watch": "less-watch-compiler styles styles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.17.1"
+  }
+}
