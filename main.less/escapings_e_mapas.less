@@ -1,0 +1,24 @@
+// Exemplo de uso de Escapings
+// 'escapings' é usado para evitar que o LESS processe o conteúdo
+// Por exemplo, para um seletor de atributo CSS puro.
+.escaped-example {
+  content: ~"attr(data-tooltip)";
+}
+
+// O LESS não tem 'mapas' como um recurso nativo no mesmo sentido que o SASS.
+// A funcionalidade de mapas é mais comumente simulada com 'mixins' e variáveis.
+// Este é um exemplo de como você pode agrupar propriedades.
+.propriedades-container(@estilos) {
+  @estilos();
+}
+
+// Este 'mixin' simula um mapa de estilos para um container
+.estilos-container() {
+  padding: 20px;
+  background-color: @cor-fundo;
+  border-radius: 8px;
+}
+
+.meu-container {
+  .propriedades-container(@estilos-container);
+}
