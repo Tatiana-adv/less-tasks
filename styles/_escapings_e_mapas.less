@@ -1,0 +1,17 @@
+.escaped-example {
+  content: ~"attr(data-tooltip)";
+}
+
+.propriedades-container(@estilos) {
+  @estilos();
+}
+
+.estilos-container() {
+  padding: 20px;
+  background-color: @cor-fundo;
+  border-radius: 8px;
+}
+
+.meu-container {
+  .propriedades-container(@estilos-container);
+}
