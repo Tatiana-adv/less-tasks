@@ -1,0 +1,22 @@
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: @font-principal;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-principal {
+  .botao;
+  background-color: @cor-principal;
+  color: #fff;
+  border: 1px solid @cor-principal;
+
+  &:hover {
+    background-color: darken(@cor-principal, 10%);
+  }
+}
